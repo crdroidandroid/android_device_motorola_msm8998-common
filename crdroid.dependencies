@@ -1,0 +1,34 @@
+[
+  {
+    "repository": "crdroidandroid/android_kernel_motorola_msm8998",
+    "target_path": "kernel/motorola/msm8998",
+    "branch": "14.0"
+  },
+  {
+    "repository": "LineageOS/android_hardware_motorola",
+    "target_path": "hardware/motorola",
+    "branch": "lineage-21"
+  },
+  {
+    "repository": "LineageOS/android_external_bson",
+    "target_path": "external/bson",
+    "branch": "lineage-21"
+  },
+  {	
+    "repository": "LineageOS/android_system_qcom",	
+    "target_path": "system/qcom",
+    "branch": "lineage-21"
+  },
+  {
+    "repository": "the-muppets/proprietary_vendor_motorola_chef",
+    "target_path": "vendor/motorola/chef",
+    "branch": "lineage-20",
+    "remote": "crdroid-gitlab"
+  },
+  {
+    "repository": "the-muppets/proprietary_vendor_motorola_msm8998-common",
+    "target_path": "vendor/motorola/msm8998-common",
+    "branch": "lineage-20",
+    "remote": "crdroid-gitlab"
+  }
+]
