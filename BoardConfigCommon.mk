@@ -84,7 +84,7 @@ TARGET_INIT_VENDOR_LIB := //$(PLATFORM_PATH):libinit_msm8998
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8998
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=2048 androidboot.configfs=true
 BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1
@@ -96,10 +96,6 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8998
-
-# Kernel additional flags
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -123,6 +119,9 @@ TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/product.prop
 TARGET_SYSTEM_EXT_PROP += $(PLATFORM_PATH)/system_ext.prop
 TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
 TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
@@ -148,7 +147,6 @@ ifdef TARGET_SUPPORTS_MOTO_MODS
 endif
 
 # Treble
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
