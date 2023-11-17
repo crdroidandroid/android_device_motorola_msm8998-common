@@ -9,6 +9,11 @@
     "target_path": "hardware/motorola",
     "branch": "lineage-20"
   },
+  {
+    "repository": "LineageOS/android_external_bson",
+    "target_path": "external/bson",
+    "branch": "lineage-20"
+  },
   {	
     "repository": "LineageOS/android_system_qcom",	
     "target_path": "system/qcom",
