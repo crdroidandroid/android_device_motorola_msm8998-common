@@ -20,14 +20,13 @@
     "branch": "lineage-20"
   },
   {
-    "repository": "rushiranpise/proprietary_vendor_motorola_chef",
+    "repository": "crdroidandroid/proprietary_vendor_motorola_chef",
     "target_path": "vendor/motorola/chef",
-    "branch": "lineage-20"
+    "branch": "13.0"
   },
   {
-    "repository": "the-muppets/proprietary_vendor_motorola_msm8998-common",
+    "repository": "crdroidandroid/proprietary_vendor_motorola_msm8998-common",
     "target_path": "vendor/motorola/msm8998-common",
-    "branch": "lineage-20",
-    "remote": "crdroid-gitlab"
+    "branch": "13.0"
   }
 ]
