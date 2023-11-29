@@ -1,8 +1,7 @@
 [
   {
     "repository": "crdroidandroid/android_kernel_motorola_msm8998",
-    "target_path": "kernel/motorola/msm8998",
-    "branch": "14.0"
+    "target_path": "kernel/motorola/msm8998"
   },
   {
     "repository": "LineageOS/android_hardware_motorola",
@@ -20,14 +19,11 @@
     "branch": "lineage-21"
   },
   {
-    "repository": "rushiranpise/proprietary_vendor_motorola_chef",
-    "target_path": "vendor/motorola/chef",
-    "branch": "lineage-21"
+    "repository": "crdroidandroid/proprietary_vendor_motorola_chef",
+    "target_path": "vendor/motorola/chef"
   },
   {
-    "repository": "the-muppets/proprietary_vendor_motorola_msm8998-common",
-    "target_path": "vendor/motorola/msm8998-common",
-    "branch": "lineage-21",
-    "remote": "crdroid-gitlab"
+    "repository": "crdroidandroid/proprietary_vendor_motorola_msm8998-common",
+    "target_path": "vendor/motorola/msm8998-common"
   }
 ]
