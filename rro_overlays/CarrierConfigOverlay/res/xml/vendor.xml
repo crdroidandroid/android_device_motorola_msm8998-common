@@ -50,6 +50,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="hide_preferred_network_type_bool" value="false" />
         <boolean name="show_cdma_choices_bool" value="true" />
         <boolean name="allow_video_call_in_low_battery" value="true" />
+        <boolean name="default_carrierconfig_loaded" value="true" />
+        <boolean name="show_ims_registration_status_bool" value="true" />
         <boolean name="config_enable_display_14digit_imei" value="false" />
         <!-- Determines whether UI extensions for video calls should be used or not -->
         <boolean name="video_call_use_ext" value="true" />
@@ -875,11 +877,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
 
     <carrier_config mcc="405" mnc="864">
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="hide_ims_apn_bool" value="true"/>
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
-        <boolean name="video_call_use_ext" value="false" />
+        <boolean name="video_call_use_ext" value="true" />
         <boolean name="use_custom_video_ui" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true"/>
@@ -887,9 +893,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="transmit_static_image" value="true"/>
         <boolean name="show_static_image_ui" value="true"/>
         <boolean name="config_dds_switch_alert_dialog_supported" value="true"/>
-        <boolean name="show_video_quality_toast" value="false"/>
-        <boolean name="show_call_session_event_toast" value="false"/>
-        <boolean name="show_data_usage_toast" value="false"/>
+        <boolean name="show_video_quality_toast" value="true"/>
+        <boolean name="show_call_session_event_toast" value="true"/>
+        <boolean name="show_data_usage_toast" value="true"/>
         <string-array name="apn_hide_rule_strings_with_iccids_array" num="6">
             <item value="iccid"/>
             <item value="8991840,8991854,8991855,8991856,8991857,8991858,8991859,899186,8991870,8991871,8991872,8991873,8991874"/>
