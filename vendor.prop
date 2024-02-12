@@ -98,6 +98,10 @@ vendor.video.disable.ubwc=1
 # Color Mode
 vendor.display.enable_default_color_mode=1
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # Display
 debug.renderengine.backend=skiaglthreaded
 debug.sf.latch_unsignaled=true
